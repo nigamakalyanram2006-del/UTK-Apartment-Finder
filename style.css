@@ -1,0 +1,221 @@
+
+
+body {
+    background-image: url('R.png');  
+    background-repeat: no-repeat;              /* Prevents repeating */
+    background-position: bottom;               
+    background-size: contain;
+    background-color: rgb(138, 138, 138);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+
+
+
+.fontstyle{                                /* Makes the whole website this font */
+    font-family: sans-serif;
+}
+
+/* Bottom Navigation Buttons placement: */
+
+.left_text{
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.right_text{
+    text-align: right;
+}
+
+.center_text{
+    text-align: center;
+}
+
+
+.space {                                      /* Adds space on top of text */
+    margin-top: 2rem;
+}
+
+
+.bodybgc_homepage{                      /* Home Page Box is smaller hence this */
+    background-color: white;
+    font-weight: 500;
+    font-size: 12pt;
+    font-family: Arial Narrow, Arial, sans-serif;
+    width: 500px;                       /* Width of box */
+    padding: 20px;                      /* adds space between text and its border/edges */
+    margin: 100px auto;                 /* adds space above and below box for its position on screen, 'auto' centers box horizontally on page by automatically calculating equal left and right margins */
+    text-align: center;                 /* positon of text in box */
+    border-radius: 10px;                /* rounds border of the box */
+    box-shadow:  0 6px 12px 2px rgba(0,0,0,0.2), 0 -6px 12px 2px rgba(0,0,0,0.2);   /* adds shadow below, and above:   offset-x   offset-y    blur-radius   color (opacity included) ;   */
+}
+
+.bodybgc_everything{                       /* This is for non home pages (everything else) boxes */
+    background-color: white;
+    font-family: Arial Narrow, Arial, sans-serif;
+    width: 1050px;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow:  0 4px 6px rgba(0,0,0,0.2), 0 -4px 6px rgba(0,0,0,0.2);
+}
+
+
+.smallerbgc_everything{                     /* For the boxes (tables and summary flow for example) inside the boxes */
+    background-color: white;
+    font-family: Arial Narrow, Arial, sans-serif;
+    width: 800px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow:  0 4px 6px rgba(0,0,0,0.2), 0 -4px 6px rgba(0,0,0,0.2);
+}
+
+
+.nav_button{                               /* creating the button style */
+    width: 130px;
+    padding: 5px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #efefef;
+    border: none;
+    border-radius: 25px;
+    color: #424242;
+    box-shadow:  -4px -4px 6px #f9f9f9,
+                  4px 4px 6px #00000026;
+}
+.nav_button:hover{                             /* creating the "animation", if you will...when user hovers the house over this element, the style (shadow effect) is applied */
+    box-shadow: 2px 2px 2px #f9f9f9,
+    -2px -2px 2px #00000026;
+    font-weight: bold;
+
+}
+
+nav a {                          /* For no underline for navigation links at the bottom */
+    text-decoration: none;
+    color: #0077cc;
+}
+
+
+
+
+.nav_top_shortcut {                /* Navigation shortcut buttons on top of page for convenience */
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial Narrow, Arial, sans-serif;
+    padding: 9px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow:  0 4px 6px rgba(0,0,0,0.2), 0 -4px 6px rgba(0,0,0,0.2);
+}
+.nav_top_shortcut a {
+    flex-grow: 1;
+    transition: 0.3s all ease, background-color 0.3s ease;
+    cursor: pointer;
+    will-change: transform, background-color;
+
+}
+.nav_top_shortcut a:hover {
+    flex-grow: 2;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+
+.link_interactive{                            /* creating the "button" */
+    color: #0077cc;
+    text-decoration: none;                    /* Removes the underline that links usually have*/
+}
+.link_interactive:hover{                      /* "animation"....turns the link darker when hovered on top of */
+    color: #004b82;
+    text-decoration: underline;               /* underline appears when text is hovered on */
+    top: 1px;                                 /* moves the link down 1 pixel, creating the "button press" effect*/
+}
+.link_interactive:active{                    /* "animation"....makes the link looked pressed down on */
+    position: relative;
+}
+
+
+.image_editor{                               /* Styles images */
+    background-color: white;
+    font-family: Arial Narrow, Arial, sans-serif;
+
+    width: 360px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow:  0 4px 6px rgba(0,0,0,0.2), 0 -4px 6px rgba(0,0,0,0.2);
+}
+
+table{                                      /* Styles tables */
+    padding: 5px;
+    border-radius: 10px;
+
+    box-shadow:  0 4px 6px rgba(0,0,0,0.2), 0 -4px 6px rgba(0,0,0,0.2);
+
+}
+
+details {                                /* Adds spaces between each of the drop down explanation things */
+    padding: 5px;
+
+}
+details:hover{                           /* When you hover over the drop down explanation things, they turn from black to grey color */
+    color: dimgrey;
+}
+
+#mySubmitButton {
+    font-family: Arial Narrow, Arial, sans-serif;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 4px;
+    width: 110px;
+    border: none;
+    box-shadow:  -4px -4px 6px #f9f9f9,
+                  4px 4px 6px #00000026;
+}
+
+#mySubmitButton:hover {
+    box-shadow: 2px 2px 2px #f9f9f9,
+    -2px -2px 2px #00000026;
+}
+
+
+table th {
+    padding: 8px;
+}
+
+
+select {
+    border-radius: 20px;
+    padding: 3px;
+    width: 85px;
+    background-color: #efefef;
+    border: none;
+    box-shadow:  -4px -4px 6px #f9f9f9,
+                  4px 4px 6px #00000026;
+}
+
+select:hover {
+    box-shadow: 2px 2px 2px #f9f9f9,
+    -2px -2px 2px #00000026;
+}
+
+#result a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#result a:hover{
+    color: #004b82;
+    text-decoration: underline; 
+    top: 1px;
+}
+
+#result a:active {
+    position: relative;
+}
